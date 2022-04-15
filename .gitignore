@@ -1,0 +1,7 @@
+../Users/User/PycharmProjects/pythonProjectTelegrambot/.env
+venv
+.idea
+.vscode
+__puchace__/
+*.py[cod]
+*.so
