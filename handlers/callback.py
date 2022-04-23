@@ -2,7 +2,7 @@ from aiogram import types, Dispatcher
 
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ParseMode
 
-from config import  bot
+from config import bot
 
 
 async def quiz_2(call: types.CallbackQuery):
@@ -55,7 +55,8 @@ async def quiz_3(call: types.CallbackQuery):
         explanation_parse_mode=ParseMode.MARKDOWN_V2,
     )
 
-def register_handlers_callback(dp: Dispatcher):
+
+def register_handler_callback(dp: Dispatcher):
     dp.register_callback_query_handler(quiz_2,
                                        lambda call: call.data == "button_call_1")
     dp.register_callback_query_handler(quiz_3,
